@@ -20,3 +20,14 @@ int main(){
 		case 1 :cout<<"\nAscending :";
 				for(i=1;i<=n;i++){
 					for(j=1+i;j<=n;j++){
+						if(data[i]>data[j]){
+							tmp=data[i];
+							data[i]=data[j];
+							data[j]=tmp;	
+						}
+					}
+				}
+		case 2 :cout<<"\nAscending :";
+				for(i=n-1;i>=1;i--){
+					for(j=1;j<=i;j++){
+						if(data[j]>data[j+1]){
