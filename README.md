@@ -31,3 +31,19 @@ int main(){
 				for(i=n-1;i>=1;i--){
 					for(j=1;j<=i;j++){
 						if(data[j]>data[j+1]){
+							tmp=data[j+1];
+							data[j+1]=data[j];
+							data[j]=tmp;
+						}
+					}
+				}	
+	}
+	
+	cout<<"\nAscending :";	
+	for(i=1;i<=n;i++){
+		cout<<data[i]<<"  ";
+	}
+	
+	
+	return 0;
+}
