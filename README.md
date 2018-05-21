@@ -17,9 +17,8 @@ int main(){
 	cin>>pil;
 	
 	switch(pil){
-		case 1 :cout<<"\nAscending :";
-				for(i=1;i<=n;i++){
-					for(j=1+i;j<=n;j++){
+		case 1 :for(i=1;i<=n;i++){
+				for(j=1+i;j<=n;j++){
 						if(data[i]>data[j]){
 							tmp=data[i];
 							data[i]=data[j];
@@ -27,9 +26,8 @@ int main(){
 						}
 					}
 				}
-		case 2 :cout<<"\nAscending :";
-				for(i=n-1;i>=1;i--){
-					for(j=1;j<=i;j++){
+		case 2 :for(i=n-1;i>=1;i--){
+				for(j=1;j<=i;j++){
 						if(data[j]>data[j+1]){
 							tmp=data[j+1];
 							data[j+1]=data[j];
